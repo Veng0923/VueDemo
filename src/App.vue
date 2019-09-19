@@ -23,6 +23,7 @@
         <TransitionDemo :is-editing="isEditing" :docState="on" @click="toggle"></TransitionDemo>
         <TransitionListDemo :items.sync="items"></TransitionListDemo>
         <Width100Demo></Width100Demo>
+        <NineTransitionDemo></NineTransitionDemo>
     </div>
 </template>
 
@@ -36,10 +37,12 @@
     import TransitionDemo from "@/components/transition/transition-demo";
     import TransitionListDemo from "@/components/transition/transition-list-demo";
     import Width100Demo from "@/components/width100-demo";
+    import NineTransitionDemo from "@/components/transition/nine-transition-demo";
 
     export default {
         name: 'app',
         components: {
+            NineTransitionDemo,
             Width100Demo,
             TransitionListDemo,
             TransitionDemo,
