@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import {test} from './util';
+    import {test} from '../util';
 
     export default {
         name: "transition-list-demo",
@@ -33,5 +33,5 @@
 </script>
 
 <style scoped>
-    @import "fade.css";
+    @import "../fade.css";
 </style>

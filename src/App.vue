@@ -30,11 +30,11 @@
     import HelloWorld from "@/components/HelloWorld";
     import BaseInput from "@/components/base-input";
     import BaseCheckbox from "@/components/base-checkbox";
-    import HelloSlot from "@/components/hello-slot";
-    import SlotBaseLayout from "@/components/slot-base-layout";
-    import SlotScope from "@/components/slot-scope";
-    import TransitionDemo from "@/components/transition-demo";
-    import TransitionListDemo from "@/components/transition-list-demo";
+    import HelloSlot from "@/components/slot/hello-slot";
+    import SlotBaseLayout from "@/components/slot/slot-base-layout";
+    import SlotScope from "@/components/slot/slot-scope";
+    import TransitionDemo from "@/components/transition/transition-demo";
+    import TransitionListDemo from "@/components/transition/transition-list-demo";
     import Width100Demo from "@/components/width100-demo";
 
     export default {
