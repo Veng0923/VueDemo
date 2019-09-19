@@ -22,6 +22,7 @@
         </SlotScope>
         <TransitionDemo :is-editing="isEditing" :docState="on" @click="toggle"></TransitionDemo>
         <TransitionListDemo :items.sync="items"></TransitionListDemo>
+        <Width100Demo></Width100Demo>
     </div>
 </template>
 
@@ -34,10 +35,12 @@
     import SlotScope from "@/components/slot-scope";
     import TransitionDemo from "@/components/transition-demo";
     import TransitionListDemo from "@/components/transition-list-demo";
+    import Width100Demo from "@/components/width100-demo";
 
     export default {
         name: 'app',
         components: {
+            Width100Demo,
             TransitionListDemo,
             TransitionDemo,
             SlotScope,
