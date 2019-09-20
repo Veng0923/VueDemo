@@ -25,6 +25,7 @@
         <Width100Demo></Width100Demo>
         <NineTransitionDemo></NineTransitionDemo>
         <InputTransitionDemo></InputTransitionDemo>
+        <TransitionWatchDemo></TransitionWatchDemo>
     </div>
 </template>
 
@@ -40,10 +41,12 @@
     import Width100Demo from "@/components/width100-demo";
     import NineTransitionDemo from "@/components/transition/nine-transition-demo";
     import InputTransitionDemo from "@/components/transition/input-transition-demo";
+    import TransitionWatchDemo from "@/components/transition/transition-watch-demo";
 
     export default {
         name: 'app',
         components: {
+            TransitionWatchDemo,
             InputTransitionDemo,
             NineTransitionDemo,
             Width100Demo,
