@@ -24,6 +24,7 @@
         <TransitionListDemo :items.sync="items"></TransitionListDemo>
         <Width100Demo></Width100Demo>
         <NineTransitionDemo></NineTransitionDemo>
+        <InputTransitionDemo></InputTransitionDemo>
     </div>
 </template>
 
@@ -38,10 +39,12 @@
     import TransitionListDemo from "@/components/transition/transition-list-demo";
     import Width100Demo from "@/components/width100-demo";
     import NineTransitionDemo from "@/components/transition/nine-transition-demo";
+    import InputTransitionDemo from "@/components/transition/input-transition-demo";
 
     export default {
         name: 'app',
         components: {
+            InputTransitionDemo,
             NineTransitionDemo,
             Width100Demo,
             TransitionListDemo,
