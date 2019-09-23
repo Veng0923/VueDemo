@@ -26,6 +26,7 @@
         <NineTransitionDemo></NineTransitionDemo>
         <InputTransitionDemo></InputTransitionDemo>
         <TransitionWatchDemo></TransitionWatchDemo>
+        <MixinDemo></MixinDemo>
     </div>
 </template>
 
@@ -42,10 +43,12 @@
     import NineTransitionDemo from "@/components/transition/nine-transition-demo";
     import InputTransitionDemo from "@/components/transition/input-transition-demo";
     import TransitionWatchDemo from "@/components/transition/transition-watch-demo";
+    import MixinDemo from "@/components/mix/mixin-demo";
 
     export default {
         name: 'app',
         components: {
+            MixinDemo,
             TransitionWatchDemo,
             InputTransitionDemo,
             NineTransitionDemo,
