@@ -12,6 +12,9 @@
         render(createElement, context) {
             return createElement('h1', this.blogTitle);
         },
+        props:{
+            blogTitle:String,
+        }
     });
     export default {
         name: "jsx-demo",
