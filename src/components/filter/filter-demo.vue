@@ -1,6 +1,6 @@
 <template>
     <div>
-        <br>
+        <hr>
         <el-input class="input-width" size="small" v-model="query"></el-input>
 <!--        <input v-model="query"/>-->
         <p>{{query|capitalize}}</p>
