@@ -29,6 +29,7 @@
         <MixinDemo></MixinDemo>
         <InstructDemo></InstructDemo>
         <JsxDemo></JsxDemo>
+        <FilterDemo></FilterDemo>
     </div>
 </template>
 
@@ -48,9 +49,11 @@
     import MixinDemo from "@/components/mix/mixin-demo";
     import InstructDemo from "@/components/instruct/instruct-demo";
     import JsxDemo from "@/components/jsx/jsx-demo";
+    import FilterDemo from "@/components/filter/filter-demo";
     export default {
         name: 'app',
         components: {
+            FilterDemo,
             JsxDemo,
             InstructDemo,
             MixinDemo,

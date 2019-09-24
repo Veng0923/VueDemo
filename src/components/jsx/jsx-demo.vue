@@ -8,7 +8,6 @@
     import Vue from 'vue';
 
     Vue.component('jsx', {
-        functional: true,
         render(createElement, context) {
             return createElement('h1', this.blogTitle);
         },
