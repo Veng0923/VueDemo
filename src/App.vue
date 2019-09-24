@@ -1,35 +1,43 @@
 <template>
     <div id="app">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-        <BaseCheckbox v-model="checked" :label="label"  ></BaseCheckbox>
-        <BaseInput @click="click" :sync.sync="username" :label="'username:'" :message="message"/>
-        <HelloSlot><i>veng</i></HelloSlot>
-        <SlotBaseLayout>
-            <template slot="header">
-                header
-            </template>
-            <template>
-                main
-            </template>
-            <template v-slot:footer>
-                footer
-            </template>
-        </SlotBaseLayout>
-        <SlotScope>
-            <template slot-scope="{user}">
-              {{user.age}}
-            </template>
-        </SlotScope>
-        <TransitionDemo :is-editing="isEditing" :docState="on" @click="toggle"></TransitionDemo>
-        <TransitionListDemo :items.sync="items"></TransitionListDemo>
-        <Width100Demo></Width100Demo>
-        <NineTransitionDemo></NineTransitionDemo>
-        <InputTransitionDemo></InputTransitionDemo>
-        <TransitionWatchDemo></TransitionWatchDemo>
-        <MixinDemo></MixinDemo>
-        <InstructDemo></InstructDemo>
-        <JsxDemo></JsxDemo>
-        <FilterDemo></FilterDemo>
+        <router-link :to="{name:'vueDemo'}">go vuex</router-link>
+        <router-link :to="{name:'nine'}">go nine</router-link>
+        <router-link :to="{name:'dynamic',params:{id:1}}">go dynamic</router-link>
+        <router-view></router-view>
+        <router-view name="a"></router-view>
+        <router-view name="b"></router-view>
+
+<!--        <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+<!--        <BaseCheckbox v-model="checked" :label="label"  ></BaseCheckbox>-->
+<!--        <BaseInput @click="click" :sync.sync="username" :label="'username:'" :message="message"/>-->
+<!--        <HelloSlot><i>veng</i></HelloSlot>-->
+<!--        <SlotBaseLayout>-->
+<!--            <template slot="header">-->
+<!--                header-->
+<!--            </template>-->
+<!--            <template>-->
+<!--                main-->
+<!--            </template>-->
+<!--            <template v-slot:footer>-->
+<!--                footer-->
+<!--            </template>-->
+<!--        </SlotBaseLayout>-->
+<!--        <SlotScope>-->
+<!--            <template slot-scope="{user}">-->
+<!--              {{user.age}}-->
+<!--            </template>-->
+<!--        </SlotScope>-->
+<!--        <TransitionDemo :is-editing="isEditing" :docState="on" @click="toggle"></TransitionDemo>-->
+<!--        <TransitionListDemo :items.sync="items"></TransitionListDemo>-->
+<!--        <Width100Demo></Width100Demo>-->
+<!--        <NineTransitionDemo></NineTransitionDemo>-->
+<!--        <InputTransitionDemo></InputTransitionDemo>-->
+<!--        <TransitionWatchDemo></TransitionWatchDemo>-->
+<!--        <MixinDemo></MixinDemo>-->
+<!--        <InstructDemo></InstructDemo>-->
+<!--        <JsxDemo></JsxDemo>-->
+<!--        <FilterDemo></FilterDemo>-->
+<!--        <VuexDemo></VuexDemo>-->
     </div>
 </template>
 
@@ -50,9 +58,11 @@
     import InstructDemo from "@/components/instruct/instruct-demo";
     import JsxDemo from "@/components/jsx/jsx-demo";
     import FilterDemo from "@/components/filter/filter-demo";
+    import VuexDemo from "@/components/vuex/vuex-demo";
     export default {
         name: 'app',
         components: {
+            VuexDemo,
             FilterDemo,
             JsxDemo,
             InstructDemo,
