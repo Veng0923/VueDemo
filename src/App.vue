@@ -3,7 +3,9 @@
         <router-link :to="{name:'vueDemo'}">go vuex</router-link>
         <router-link :to="{name:'nine'}">go nine</router-link>
         <router-link :to="{name:'dynamic',params:{id:1}}">go dynamic</router-link>
-        <router-view></router-view>
+        <TransitionSlot>
+            <router-view></router-view>
+        </TransitionSlot>
         <router-view name="a"></router-view>
         <router-view name="b"></router-view>
 
@@ -59,9 +61,11 @@
     import JsxDemo from "@/components/jsx/jsx-demo";
     import FilterDemo from "@/components/filter/filter-demo";
     import VuexDemo from "@/components/vuex/vuex-demo";
+    import TransitionSlot from "@/components/transition/transition-slot";
     export default {
         name: 'app',
         components: {
+            TransitionSlot,
             VuexDemo,
             FilterDemo,
             JsxDemo,
